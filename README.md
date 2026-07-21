@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Surya Vignesh S — Portfolio
 
 Built with **Next.js 14 (App Router)**, **Tailwind CSS**, and **Framer Motion**.
@@ -96,3 +97,7 @@ update anything on the site — no need to touch components for copy changes.
 
 Everything else (About, Experience, Internships, Education, Skills,
 Certifications, Projects, Activities) is pulled directly from the resume.
+=======
+# SuryaVigneshS-Devops-SD-Portfolio
+Computer Science Engineering graduate passionate about Cloud Computing, DevOps, AI, and Software Development. Skilled in AWS, Azure, Docker, Kubernetes, Terraform, Linux, Git, Python, and Java. Dedicated to building scalable solutions, automating workflows, and continuously learning modern technologies.
+>>>>>>> e376d48e01f62d7722383fbc2f8876c5cb87e1a6
