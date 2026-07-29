@@ -1,27 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  ExternalLink,
-  Github,
-  Activity,
-  Captions,
-  Recycle,
-  HeartPulse,
-} from "lucide-react";
+import { Activity, Captions, HeartPulse, Recycle, ArrowUpRight } from "lucide-react";
 import { projects } from "@/lib/data";
 import { stageMeta } from "@/lib/stage";
 import SectionHeading from "./SectionHeading";
 
-const icons = { Activity, Captions, Recycle, HeartPulse };
+const icons = { Activity, Captions, HeartPulse, Recycle };
 
 export default function Projects() {
   return (
     <section id="projects" className="px-6 py-28">
       <SectionHeading
-        eyebrow="Featured Projects"
+        eyebrow="featured-projects"
         title="Selected builds, end to end."
-        description="From a published deep learning paper to an in-progress healthcare assistant — each one shipped as a working system, not just a notebook."
+        description="From a published deep learning paper to a live AI healthcare assistant — each one shipped as a working system, not just a notebook."
       />
 
       <div className="mx-auto mt-16 grid max-w-5xl gap-8 sm:grid-cols-2">
@@ -37,9 +30,7 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
               className="card-schematic flex flex-col overflow-hidden rounded-lg"
             >
-              <div
-                className={`relative flex h-40 items-center justify-center border-b border-dashed border-blueprint-grid bg-blueprint-800 bg-blueprint-canvas`}
-              >
+              <div className="relative flex h-40 items-center justify-center border-b border-dashed border-blueprint-grid bg-blueprint-800">
                 <div
                   className={`flex h-16 w-16 items-center justify-center rounded-full ${meta.bg} ${meta.border} border`}
                 >
@@ -53,7 +44,7 @@ export default function Projects() {
               </div>
 
               <div className="flex flex-1 flex-col p-6">
-                <div className="flex items-center justify-between gap-3">
+                <div className="flex items-start justify-between gap-3">
                   <h3 className="font-display text-lg font-semibold text-ink-100">
                     {project.title}
                   </h3>
@@ -77,28 +68,16 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <div className="mt-5 flex items-center gap-4 border-t border-blueprint-grid/60 pt-4">
-                  {project.sourceUrl ? (
-                    <a
-                      href={project.sourceUrl}
-                      className="inline-flex items-center gap-1.5 text-sm text-ink-300 hover:text-stage-build"
-                    >
-                      <Github size={14} /> Source
-                    </a>
-                  ) : (
-                    <span className="placeholder-badge">+ add source link</span>
-                  )}
-                  {project.liveUrl ? (
-                    <a
-                      href={project.liveUrl}
-                      className="inline-flex items-center gap-1.5 text-sm text-ink-300 hover:text-stage-build"
-                    >
-                      <ExternalLink size={14} /> Live demo
-                    </a>
-                  ) : (
-                    <span className="placeholder-badge">+ add live demo</span>
-                  )}
-                </div>
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`cursor-pop mt-5 inline-flex w-fit items-center gap-1.5 border-t border-blueprint-grid/60 pt-4 text-sm font-medium ${meta.text} hover:underline`}
+                  >
+                    View project <ArrowUpRight size={14} />
+                  </a>
+                )}
               </div>
             </motion.article>
           );

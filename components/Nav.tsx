@@ -23,7 +23,7 @@ export default function Nav() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a
           href="#top"
-          className="font-display text-lg font-semibold tracking-tight text-ink-100"
+          className="font-pixel-score text-sm text-ink-100"
         >
           SV<span className="text-stage-build">.</span>
         </a>
@@ -51,9 +51,9 @@ export default function Nav() {
           </a>
           <a
             href="#contact"
-            className="rounded-md bg-stage-build px-4 py-2 text-sm font-medium text-blueprint-950 transition-transform hover:scale-[1.03]"
+            className="btn-pixel cursor-pop border-2 border-black bg-stage-build px-4 py-3 text-blueprint-950"
           >
-            Let&apos;s talk
+            LET&apos;S TALK
           </a>
         </div>
       </div>

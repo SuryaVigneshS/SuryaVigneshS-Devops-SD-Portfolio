@@ -34,7 +34,7 @@ export default function About() {
         >
           <span className="eyebrow">About</span>
           <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink-100 sm:text-4xl">
-            From enterprise IT deals to deployment pipelines.
+            Two internships, one research paper, one live product.
           </h2>
 
           <div className="mt-6 space-y-4 text-ink-300">

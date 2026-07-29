@@ -11,7 +11,7 @@ export default function Journey() {
       <SectionHeading
         eyebrow="Journey"
         title="Commit history of the last few years."
-        description="A running log of what got built, tested, and shipped — from a CS degree to enterprise IT to hands-on DevOps prep."
+        description="A running log of what got built, tested, and shipped — from a CS degree to two internships to independent research and a live product."
       />
 
       <div className="mx-auto mt-16 max-w-3xl">

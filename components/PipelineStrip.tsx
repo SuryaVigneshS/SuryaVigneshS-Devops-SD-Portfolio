@@ -3,11 +3,11 @@
 import { motion } from "framer-motion";
 
 const stages = [
-  { key: "source", label: "source", color: "#8B98AC" },
-  { key: "build", label: "build", color: "#38BDF8" },
-  { key: "test", label: "test", color: "#34D399" },
-  { key: "deploy", label: "deploy", color: "#F5A524" },
-  { key: "monitor", label: "monitor", color: "#C084FC" },
+  { key: "source", label: "source", color: "#858585" },
+  { key: "build", label: "build", color: "#569cd6" },
+  { key: "test", label: "test", color: "#4ec9b0" },
+  { key: "deploy", label: "deploy", color: "#ce9178" },
+  { key: "monitor", label: "monitor", color: "#c586c0" },
 ];
 
 export default function PipelineStrip() {
