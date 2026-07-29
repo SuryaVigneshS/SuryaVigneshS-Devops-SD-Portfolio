@@ -22,8 +22,8 @@ export const profile = {
 
 export const hero = {
   eyebrow: "open to DevOps & Software Development roles",
-  headline: "Shipping reliable systems,",
-  headlineAccent: "one deploy at a time.",
+  headline: "Transforming Ideas into",
+  headlineAccent: "High-Performance Software Solutions.",
   subhead:
     "I'm a Computer Science graduate building full-stack and applied ML projects — from a published deep learning research paper to an AI healthcare assistant live in production — while working toward a career in DevOps engineering, cloud infrastructure, and automation.",
 };
