@@ -25,7 +25,7 @@ export const hero = {
   headline: "Transforming Ideas into",
   headlineAccent: "High-Performance Software Solutions.",
   subhead:
-    "I'm a Computer Science graduate building full-stack and applied ML projects — from a published deep learning research paper to an AI healthcare assistant live in production — while working toward a career in DevOps engineering, cloud infrastructure, and automation.",
+    "I'm a Computer Science graduate building full-stack and applied ML projects — from a published deep learning research paper to Lung Cancer Detection using CT-Scan and Currently developing an AI healthcare assistant - HealCurX Ai- while working toward a career in DevOps engineering, cloud infrastructure, and automation.",
 };
 
 export const about = {
